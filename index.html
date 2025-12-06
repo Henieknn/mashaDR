@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<title>пипяу</title>
+<title>пипяу))</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
   body, html { margin:0; height:100%; overflow:hidden; font-family:'Segoe UI',sans-serif; color:white; }
@@ -76,15 +76,12 @@
 
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 <script>
-let shift = 0;
 let heartsFound = 0;
 let giftClicks = 0;
 
 function checkShift() {
   const val = parseInt(document.getElementById('shiftInput').value);
   if (val === 3) {
-    shift = val;
-    document.getElementById('shiftValue').textContent = shift;
     confetti({particleCount:150});
     setTimeout(() => next(2), 800);
   } else {
