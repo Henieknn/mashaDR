@@ -103,7 +103,7 @@ function checkHidden() {
   const pass = document.getElementById('hiddenPass').value.trim().toLowerCase();
   if (pass === 'морковка') {
     confetti({particleCount:200});
-    setTimeout(() => next(4), 1000);
+    setTimeout(() => next(5), 1000);
   } else {
     alert('Не угадала');
   }
@@ -140,7 +140,7 @@ function makeSquare(col, isSpecial) {
       setTimeout(() => sq.remove(), 600);
       document.getElementById('heartsCount').textContent = heartsFound;
       confetti({particleCount:80});
-      if (heartsFound === 3) setTimeout(() => next(5), 1200);
+      if (heartsFound === 3) setTimeout(() => next(4), 1200);
     } else {
       alert('Не тот цвет...');
     }
